@@ -32,13 +32,13 @@ const Home = () => {
           as="h1"
           size="28px"
           fontWeight="bold"
-          marginTop="20px"
+          marginTop="10px"
           color="#001233"
         >
           Budget
         </Heading>
 
-        <Box display="flex" alignItems="center" marginTop="42px">
+        <Box display="flex" alignItems="center" marginTop="10px">
           <Icon as={TbCurrencyNaira} />
           <Text fontSize="14px" marginLeft="4px" color="#707480">
             Monthly Budget
