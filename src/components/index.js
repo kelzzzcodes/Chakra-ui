@@ -1,7 +1,7 @@
 import Bottombar from "./Bottombar";
 import TabsSection from "./TabsSection";
-import CategorySetion from "./CategorySetion";
+import CategorySection from "./CategorySection";
 
 export  {
-    Bottombar,TabsSection,CategorySetion
+    Bottombar,TabsSection,CategorySection
 }

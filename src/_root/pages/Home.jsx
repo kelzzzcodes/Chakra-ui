@@ -1,15 +1,7 @@
-import {
-  Box,
-  Container,
-  Flex,
-  Heading,
-  Icon,
-  Stack,
-  Text,
-} from '@chakra-ui/react'
+import { Box, Flex, Heading, Icon, Text } from '@chakra-ui/react'
 
 import { TbCurrencyNaira } from 'react-icons/tb'
-import { Bottombar, CategorySetion, TabsSection } from '../components'
+import { CategorySection, TabsSection } from '../../components'
 
 
 const Home = () => {
@@ -17,17 +9,10 @@ const Home = () => {
     <Box
       display="flex"
       flexDirection="column"
-      h="100vh" // Set height to 100vh
+       flex="1" overflowY="auto"
       bg="white"
-      overflow="none"
-      position="absolute"
-      Outer
-      box
-      with
-      green
-      background
     >
-      <Box w="md" position="fixed" top="0" marginLeft="30px">
+      <Box  marginLeft="30px" >
         <Heading
           as="h1"
           size="28px"
@@ -37,7 +22,6 @@ const Home = () => {
         >
           Budget
         </Heading>
-
         <Box display="flex" alignItems="center" marginTop="10px">
           <Icon as={TbCurrencyNaira} />
           <Text fontSize="14px" marginLeft="4px" color="#707480">
@@ -58,14 +42,12 @@ const Home = () => {
             style={{ marginTop: 'auto', marginBottom: 'auto' }}
           >
             <Icon as={TbCurrencyNaira} />
-
             <Text> 120,000 </Text>
           </Flex>
         </Box>
         <TabsSection/>
-        <CategorySetion/>
+        <CategorySection/>
       </Box>
-      <Bottombar />
     </Box>
   )
 }

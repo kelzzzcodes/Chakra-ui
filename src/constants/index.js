@@ -50,6 +50,20 @@ export const CategoryData = [
     expenditure: '₦10,000',
     income: '₦24,000'
   },
+  {
+    label: 'events',
+    icon: IoRestaurantOutline,
+    rating: '20%' ,
+    expenditure: '₦20,000',
+    income: '₦42,000'
+  },
+  {
+    label: 'School fees',
+    icon: TbPigMoney,
+    rating: '10%' ,
+    expenditure: '₦10,000',
+    income: '₦24,000'
+  },
 
 
 

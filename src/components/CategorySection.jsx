@@ -2,10 +2,10 @@ import { Box, Heading, Icon, Text } from '@chakra-ui/react'
 import { IoRestaurantOutline } from 'react-icons/io5'
 import { CategoryData } from '../constants'
 
-const CategorySetion = () => {
+const CategorySection = () => {
   return (
-    <Box>
-      <Heading fontSize="24px" color="#001233">
+    <Box display='flex' flexDirection='column'>
+      <Heading  fontSize="24px" color="#001233">
         Category Breakdown
       </Heading>
 
@@ -42,4 +42,4 @@ const CategorySetion = () => {
   )
 }
 
-export default CategorySetion
+export default CategorySection
