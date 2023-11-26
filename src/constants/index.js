@@ -1,8 +1,9 @@
 import { MdOutlineHome } from "react-icons/md";
-import { TbFileHorizontal } from "react-icons/tb";
+import { TbFileHorizontal,TbPigMoney } from "react-icons/tb";
 import { RiChatSmile2Line } from "react-icons/ri";
 import { RiBarChartFill } from "react-icons/ri";
-import { IoPersonOutline } from "react-icons/io5";
+import { IoPersonOutline,IoRestaurantOutline } from "react-icons/io5";
+
 
 export const BottombarLinks = [
     {
@@ -31,4 +32,25 @@ export const BottombarLinks = [
     icon: IoPersonOutline,
     label: 'Profile',
   },
+]
+
+export const CategoryData = [
+
+  {
+    label: 'Food and Drinks',
+    icon: IoRestaurantOutline,
+    rating: '40%' ,
+    expenditure: '₦20,000',
+    income: '₦42,000'
+  },
+   {
+    label: 'Savings',
+    icon: TbPigMoney,
+    rating: '10%' ,
+    expenditure: '₦10,000',
+    income: '₦24,000'
+  },
+
+
+
 ]

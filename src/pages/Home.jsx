@@ -46,7 +46,7 @@ const Home = () => {
         </Box>
         <Box
           display="flex"
-          width="315px"
+          width="300px"
           height="51px"
           borderRadius="10px"
           boxShadow="0px 5px 10px 2px #00000008"
@@ -59,7 +59,7 @@ const Home = () => {
           >
             <Icon as={TbCurrencyNaira} />
 
-            <Text> 120,000</Text>
+            <Text> 120,000 </Text>
           </Flex>
         </Box>
         <TabsSection/>
