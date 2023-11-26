@@ -34,6 +34,21 @@ export const BottombarLinks = [
   },
 ]
 
+export const TabsData=[
+  {
+    value: '20' ,
+    rating: '40%',
+    expenditure:'₦50,000',
+    income: '₦120,000'
+  },
+    {
+    value: '70' ,
+    rating: '50%',
+    expenditure:'₦12,000',
+    income: '₦24,000'
+  },
+]
+
 export const CategoryData = [
 
   {

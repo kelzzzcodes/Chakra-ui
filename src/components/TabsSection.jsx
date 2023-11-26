@@ -1,5 +1,7 @@
 import {
   Box,
+  CircularProgress,
+  CircularProgressLabel,
   Icon,
   Spacer,
   Tab,
@@ -11,6 +13,7 @@ import {
   Text,
 } from '@chakra-ui/react'
 import { BsThreeDots } from 'react-icons/bs'
+import { TabsData } from '../constants'
 
 const TabsSection = () => {
   return (
@@ -40,34 +43,33 @@ const TabsSection = () => {
 
       <TabIndicator mt="-1.5px" height="2px" bg="blue.500" borderRadius="1px" />
       <TabPanels>
-        <TabPanel
 
-        >
-          <Box>
+       {
+        TabsData.map((items)=>(
+             <TabPanel key={items.index}>
+             <Box >
+            <CircularProgress size="150px" value={items.value} color="green.400">
+              <CircularProgressLabel>{items.rating}</CircularProgressLabel>
+            </CircularProgress>
+
             <Box
-              w="150px"
-              height="150px"
-              borderRadius="50%"
-              outline="10px solid #0466C866"
+              marginTop="20px"
+              marginLeft="20px"
+              display="flex"
+              flexDirection="column"
             >
+              <Text fontSize="14px">Amount spent so far </Text>
 
+              <Text display="flex" fontSize="16px" color="#0466C8">
+                {items.expenditure}/<Text color="#67A2DC">{items.income}</Text>
+              </Text>
             </Box>
-           <Box marginTop='20px' marginLeft='20px' display='flex' flexDirection='column'>
-
-             <Text   fontSize='14px' >Amount spent so far </Text>
-
-             <Text display='flex' fontSize='16px' color='#0466C8'>
-                ₦50,000/<Text color='#67A2DC'>₦120,000</Text>
-             </Text>
-           </Box>
           </Box>
-        </TabPanel>
-        <TabPanel>
-          <p>two!</p>
-        </TabPanel>
-        <TabPanel>
-          <p>three!</p>
-        </TabPanel>
+            </TabPanel>
+        ))
+       }
+
+
       </TabPanels>
     </Tabs>
   )
