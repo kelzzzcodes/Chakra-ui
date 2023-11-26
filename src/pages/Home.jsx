@@ -7,21 +7,16 @@ const Home = () => {
       display="flex"
       flexDirection="column"
       h="100vh" // Set height to 100vh
-      bg="white" // Outer box with green background
+      bg="white"
+      overflow='none'
+      position='absolute' Outer box with green background
     >
-      <Box
-        display="flex"
-        flexDirection="column"
-        w="md"
-        height="100vh"
-        marginLeft="30px"
-      >
-        {/* <Heading as="h1" size="28px" fontWeight="bold" marginTop="20px">
+      <Box w="md" position='fixed' top='0'>
+        <Heading as="h1" size="28px" fontWeight="bold" marginTop="20px">
           Budget
-        </Heading> */}
-
-        <Bottombar />
+        </Heading>
       </Box>
+      <Bottombar />
     </Box>
   )
 }

@@ -8,16 +8,17 @@ const Bottombar = () => {
     <Box
       position="fixed"
       bottom="0"
-      left='0'
-
-      w='xs'
+      w='376px'
       bg="white"
       color="#797B8B"
       display='flex'
+      justifyItems='center'
+      alignItems='center'
+      height='87px'
       padding="1rem"
       zIndex="999"
     >
-      <Flex display='flex' align="center" justify="space-between" w='xs'>
+      <Flex display='flex' justifyItems='center' align="center" justify="space-between" w='311px'>
         {BottombarLinks.map((items) => (
           <Link
             key={items.label}
